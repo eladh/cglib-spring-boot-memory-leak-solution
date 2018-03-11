@@ -1,11 +1,4 @@
-/*
- * User: eladh
- * Date: 06/03/2018
- *
- * Copyright (2005) IDI. All rights reserved.
- * This software is a proprietary information of Israeli Direct Insurance.
- * Created by IntelliJ IDEA.
- */
+
 package org.springframework.aop.framework;
 
 import com.google.common.collect.Maps;

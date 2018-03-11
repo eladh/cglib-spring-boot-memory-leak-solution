@@ -8,7 +8,7 @@ import org.springframework.aop.support.AopUtils;
 
 public class AspectsUtils {
 
-   private static CustomAopProxyFactory idiAopProxyFactory = new CustomAopProxyFactory();
+   private static CustomAopProxyFactory customAopProxyFactory = new CustomAopProxyFactory();
 
    public static <T> T getProxyWithInterceptor(Class<?> type, MethodInterceptor interceptor) {
       return (T) getProxy(null, type, interceptor);
@@ -29,7 +29,7 @@ public class AspectsUtils {
          e.printStackTrace();
       }
 
-      factory.setAopProxyFactory(idiAopProxyFactory);
+      factory.setAopProxyFactory(customAopProxyFactory);
 
       if (type.isInterface()) {
          factory.addInterface(type);
